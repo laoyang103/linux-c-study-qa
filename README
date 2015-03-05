@@ -1,0 +1,17 @@
+.
+├── 2015-03-05
+│   ├── answers
+│   │   ├── compress.a
+│   │   ├── func_ptr.a
+│   │   ├── netstat.a
+│   │   └── new_file.a
+│   └── questions
+│       ├── compress.q
+│       ├── func_ptr.q
+│       ├── netstat.q
+│       └── new_file.q
+└── README
+
+1. 目录结构如上所示，
+2. 每个问题和答案的名字都要对应，问题的后缀为.q答案为.a
+3. 问题在questions文件夹里，答案写在answers文件夹里
