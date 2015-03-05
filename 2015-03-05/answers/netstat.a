@@ -1,1 +1,6 @@
+查看http的并发请求数及其TCP连接状态
+		答：watch -n 1 -d "pgrep http|wc -l"
 
+
+	查看哪个进程在占用22端口
+		答：lsof -i:22
