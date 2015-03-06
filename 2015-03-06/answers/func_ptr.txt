@@ -1,4 +1,4 @@
-
+﻿
 int *f1(void)
 {
     int x =10;
@@ -25,3 +25,6 @@ int *f3(void)
 (b) 只有f1 and f3
 (c) 只有f1 and f2
 (d) f1 , f2 ,f3
+
+
+选择 b
