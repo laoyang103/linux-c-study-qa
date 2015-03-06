@@ -1,1 +1,56 @@
 
+#include <stdio.h>
+#include <string.h>
+#define STOP "quit"
+#define N 100
+
+void count(char *str);
+
+int main(void)
+{
+    char str[N];
+
+    printf("Please input the string,Empty a line . to quit:\n");
+
+    while(scanf("%s", str) != NULL)
+    {
+
+        if(strcmp(str, STOP) == 0)
+        {
+            break;
+        }
+
+        count(str);
+
+        printf("Netx: ");
+    }
+
+    printf("Bye!\n");
+
+    return 0;
+}
+
+void count( char *str)
+{
+     char arr[120] = {0};
+    int i;
+
+    if(str == NULL)
+    {
+        return;
+    }
+
+    while(*str)
+    {
+        ++arr[*str];
+        ++str;
+    }
+
+    for(i = 0; i < 120; ++i)
+    {
+       if(arr[i] != 0)
+       {
+           printf("%c has %d times\n",i,arr[i]);
+       }
+    }
+}
